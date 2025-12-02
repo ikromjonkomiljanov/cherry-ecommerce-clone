@@ -2,7 +2,6 @@ import "./App.css";
 
 // Defualt imports
 import { Routes, Route } from "react-router-dom";
-import React, { useTransition } from "react";
 
 // Routes imports
 import Navbar from "./components/Navbar";
@@ -15,7 +14,6 @@ import Home from "./components/Home";
 import Card from "./components/card";
 import Addedcart from "./components/addedcartlist";
 import AddedWishlist from "./components/addedwishlist";
-import Katalog from "./components/Katalog";
 
 function App() {
   return (

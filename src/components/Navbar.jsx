@@ -14,7 +14,6 @@ import { BsCart2 } from "react-icons/bs";
 import { LuUserRound } from "react-icons/lu";
 import { FiPhone } from "react-icons/fi";
 import { useSelector } from "react-redux";
-import Katalog from "./Katalog";
 
 
 const Navbar = () => {

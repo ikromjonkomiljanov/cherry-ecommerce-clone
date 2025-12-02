@@ -1,5 +1,3 @@
-// import { useNavigate } from "react-router-dom";
-
 import { Cards } from "./cardsDB.js";
 import "./card.css";
 import { BsCart2 } from "react-icons/bs";
@@ -19,8 +17,6 @@ function Cardlist1() {
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
   };
-
-  const res = "jdfjld "
 
   return (
     <>

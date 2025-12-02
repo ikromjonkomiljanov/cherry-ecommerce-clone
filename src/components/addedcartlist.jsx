@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { removeFromCart } from '/src/features/cart/cartslice';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import CartImg from "../assets/CArt.png"
+import CartImg from "../assets/Cart.png"
 import "./Nav-icons/Cart.css"
 
 const Addedcart = () => {

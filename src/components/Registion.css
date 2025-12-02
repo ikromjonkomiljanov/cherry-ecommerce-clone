@@ -1,0 +1,142 @@
+.Registion {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.Registion::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+/* Registion-wrap uchun */
+.Registion-wrap {
+  position: relative;
+  width: 390px;
+  height: 375px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  row-gap: 45px;
+  padding: 35px;
+  background: white;
+  z-index: 10;
+  border-radius: 12px;
+}
+
+.Registion-wrap > h1 {
+  width: 300px;
+  font-family: Raleway, sans-serif;
+  font-weight: 600;
+}
+
+.Reg-cross {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 24px;
+  color: black;
+}
+/* Umumiy quti va fon uslubi */
+.Registion-optgroup {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Elementlar orasidagi bo'shliq */
+  margin-bottom: 20px;
+}
+
+.Registion-optgroup > p {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #4d4d4d; /* Oqish rang */
+  margin: 0; /* Bo'shliqni yo'qotish */
+}
+
+/* Labelni chiroyli qilish */
+.Reg-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Select va input orasini ajratish */
+  border-radius: 12px;
+  border: 2px solid black; /* Chiroyli ko'k chegaralar */
+  padding: 8px 14px; /* Yuqori va pastki bo'shliq */
+  transition: all 0.3s ease; /* Rangi o'zgarish effektlari */
+}
+
+/* Country code select elementini yaxshilash */
+.countryCode {
+  width: 80px; /* Kichikroq o'lcham */
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  padding: 8px 10px;
+  outline: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+/* Inputni to'g'ri formatlash */
+.Reg-input {
+  width: calc(100% - 90px); /* Selectdan keyin qolgan joyni to'ldiradi */
+  padding: 8px 12px;
+  font-size: 16px;
+  font-family: "Arial", sans-serif;
+  border-radius: 8px; /* O'ralgan burchaklar */
+  outline: none;
+  transition: all 0.3s ease; /* To'g'ri o'zgarish effektlari */
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .Reg-label {
+    flex-direction: column; /* Telefon o'lchamida elementlarni vertikal joylash */
+    align-items: flex-start; /* Select va inputni ustun qilib joylashtiramiz */
+  }
+  .countryCode {
+    width: 100%;
+    margin-bottom: 10px; /* Selectni pastga olib kelish */
+  }
+  .Reg-input {
+    width: 100%;
+  }
+}
+
+.Reg-btn {
+  cursor: pointer;
+  width: 100%;
+  padding: 10px 17px;
+  border: 2px solid #e17f93;
+  background: #e17f93;
+  border-radius: 12px;
+
+  font-family: Raleway, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+}
+
+.Reg-btn:hover {
+  color: #e17f93;
+  background: transparent;
+  transition: 0.4s background;
+}
+
+.Reg-btn:active {
+  color: white;
+  background: #e17f93;
+}

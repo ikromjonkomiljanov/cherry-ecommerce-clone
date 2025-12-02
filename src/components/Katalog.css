@@ -1,0 +1,7 @@
+.Katalog {
+    z-index: 1000;
+    width: 100%;
+    height: auto;
+    display: flex;
+    border: 1px solid black;
+}

@@ -1,0 +1,19 @@
+.Favorites {
+    width: 100%;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Favorites > h1, .Favorites-items > p {
+    font-family: Raleway, sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.Favorites-items {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
